@@ -1,10 +1,9 @@
 file(REMOVE_RECURSE
   "AlgorithmProject.exe"
   "AlgorithmProject.exe.manifest"
-  "AlgorithmProject.lib"
   "AlgorithmProject.pdb"
-  "CMakeFiles/AlgorithmProject.dir/WittenExamination.cpp.obj"
-  "CMakeFiles/AlgorithmProject.dir/base_class-1.cpp.obj"
+  "CMakeFiles/AlgorithmProject.dir/base_class-2.cpp.obj"
+  "libAlgorithmProject.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
