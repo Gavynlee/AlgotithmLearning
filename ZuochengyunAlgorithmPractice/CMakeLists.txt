@@ -1,6 +1,6 @@
 # cmake_minimum_required(VERSION <specify CMake version here>)
-project(ClionProject)
+project(AlgorithmProject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ClionProject main.cpp base_class-1.cpp)
+add_executable(AlgorithmProject WittenExamination.cpp base_class-1.cpp)

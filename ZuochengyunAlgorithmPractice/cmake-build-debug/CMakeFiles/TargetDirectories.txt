@@ -1,3 +1,3 @@
-C:/Users/Gavyn/Desktop/ClionProject/AlgorithmPractice/cmake-build-debug/CMakeFiles/ClionProject.dir
-C:/Users/Gavyn/Desktop/ClionProject/AlgorithmPractice/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Gavyn/Desktop/ClionProject/AlgorithmPractice/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug/CMakeFiles/AlgorithmProject.dir
+E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug/CMakeFiles/rebuild_cache.dir

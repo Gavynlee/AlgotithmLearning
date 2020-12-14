@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="AlgorithmProject"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AlgorithmProject">
+				<Option output="E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug/AlgorithmProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 AlgorithmProject"/>
+					<CompileFile command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="AlgorithmProject/fast">
+				<Option output="E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug/AlgorithmProject.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 AlgorithmProject/fast"/>
+					<CompileFile command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f E:\AlgorithmProject\ZuochengyunAlgorithmPractice\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/AlgorithmProject/ZuochengyunAlgorithmPractice/WittenExamination.cpp">
+			<Option target="AlgorithmProject"/>
+		</Unit>
+		<Unit filename="E:/AlgorithmProject/ZuochengyunAlgorithmPractice/base_class-1.cpp">
+			<Option target="AlgorithmProject"/>
+		</Unit>
+		<Unit filename="E:/AlgorithmProject/ZuochengyunAlgorithmPractice/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
