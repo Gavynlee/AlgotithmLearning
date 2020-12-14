@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="F:/code/leetcode/editor/cn/[20]有效的括号.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="F:/code/leetcode/editor/cn/[20]有效的括号.cpp" />
+              <option name="questionId" value="20" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="F:/code/leetcode/editor/cn/[300]最长上升子序列.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="F:/code/leetcode/editor/cn/[300]最长上升子序列.cpp" />
+              <option name="questionId" value="300" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

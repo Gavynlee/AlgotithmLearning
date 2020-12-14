@@ -1,0 +1,3 @@
+C:/Users/Gavyn/Desktop/ClionProject/AlgorithmPractice/cmake-build-debug/CMakeFiles/ClionProject.dir
+C:/Users/Gavyn/Desktop/ClionProject/AlgorithmPractice/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Gavyn/Desktop/ClionProject/AlgorithmPractice/cmake-build-debug/CMakeFiles/rebuild_cache.dir
