@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Gavyn/Desktop/ClionProject/ZuochengyunAlgorithmPractice/base_class-2.cpp" "C:/Users/Gavyn/Desktop/ClionProject/ZuochengyunAlgorithmPractice/cmake-build-debug/CMakeFiles/AlgorithmProject.dir/base_class-2.cpp.obj"
+  "E:/AlgorithmProject/ZuochengyunAlgorithmPractice/base_class-2.cpp" "E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug/CMakeFiles/AlgorithmProject.dir/base_class-2.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

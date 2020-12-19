@@ -72,4 +72,49 @@ void partition(vector<int> &arr, int num)
      cout << res[0] << endl << res[1] <<endl;
  }
 
+/**
+ * brief 经典快速排序，基准数据找其正确索引位置的过程
+ *       partition 函数找到分区后的第一个元素正确索引的位置
+ * @param[in] arr 输入数组
+ * @param[in] low 需要排序区间的下限值
+ * @param[in] high 需要排序区间的上限值
+ */
+int partition(vector<int> arr, int low, int high);
+void QuikSort(vector<int> arr, int low, int high)
+{
+    if (low < high) {
+        int pivot = partition(arr, low, high); // 找arr[low]正确索引的位置
+        QuikSort(arr, low, pivot); // 分治法递归左半部分
+        QuikSort(arr, pivot + 1, high); // 分治法递归右半部分
+    }
+}
+
+int partition(vector<int> arr, int low, int high)
+{
+    int pivot = arr[low]; // 设最开始的基准数据为数组第一个元素arr[low],则首先用一个临时变量去存储基准数据
+    while (low < high) {
+        while (low < high & arr[high] > pivot) { // 当队尾的元素大于等于基准数据时,向前挪动high指针
+            high--;
+        }
+        arr[low] = arr[high]; // 如果队尾元素小于基准数据了,需要将其赋值给low
+        while (low < high & arr[low] <= pivot) { // 当队首元素小于等于pivot时,向前挪动low指针
+            low++;
+        }
+        arr[high] = arr[low]; // 当队首元素大于pivot时,需要将其赋值给high
+    }
+    arr[low] = pivot; // 跳出循环时low和high相等,此时的low或high就是pivot的正确索引位置
+    return low; // 返回pivot的正确位置
+}
+
+/**
+ * brief 经典快速排序，思路和荷兰国旗问题中的预备题目一样。
+ *       1.首先在数组[l,r]中把最后一个元素作为num进行比较，得到两段区域，分别为小于等于最后一个数的区域和大于最后一个数的区域。
+         2.在上述第一段区域内，最后一个数的值为num保留不动，倒数第二个数重新命名为num，接着继续比较，不断迭代。
+         3.在上述1的第二段区域内，把最后一个数命名为num，接着继续比较，不断迭代。
+         4.迭代继续的条件是if(l<r)
+ * @param[in] arr 输入数组
+ * @param[in] l  需要处理区间的最小值
+ * @param[in] r 需要处理区间的最大值
+ * return 返回值为x-1：返回小于等于范围内倒数第二个位置的位置，最后一个位置就是原来的num，下次直接用倒数第二个位置作为下一次的num。
+ */
 

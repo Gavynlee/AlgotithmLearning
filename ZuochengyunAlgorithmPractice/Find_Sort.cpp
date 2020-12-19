@@ -238,9 +238,6 @@ void SimpleSelectSort(int A[], int n)
     }
 }
 
-
-
-
 /*
  * （2）堆排序
  */
