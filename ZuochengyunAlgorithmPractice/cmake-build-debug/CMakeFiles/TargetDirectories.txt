@@ -1,3 +1,0 @@
-E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug/CMakeFiles/AlgorithmProject.dir
-E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/AlgorithmProject/ZuochengyunAlgorithmPractice/cmake-build-debug/CMakeFiles/rebuild_cache.dir

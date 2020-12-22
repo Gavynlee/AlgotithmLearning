@@ -63,7 +63,7 @@ int main(){
     cout<< res[0] << " " << res[1] << " " << res[2] << endl;
 }
 
-第二题
+//第二题
 #include<bits/stdc++.h>
 using namespace std;
 
