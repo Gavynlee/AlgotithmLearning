@@ -270,6 +270,11 @@ void AdjustHeap(int A[], int len, int k)
         if (i < len && A[i] < A[i + 1]) // 如果当前节点有右孩子且比左孩子大
             ++i;     // 则考虑将当前节点和右孩子比较
         if (A[0] < A[i]) { // 当前节点k和最大的孩子节点i比较
+    A[0] = A[k]; //A[0]应该为空，作为堆调整临时变量,暂存这个需要调整的节点的值
+    for (int i = 2 * k; i <= len; i *= 2) { // 左右孩子没有越界是循环的条件
+        if (i < len && A[i] < A[i + 1]) //如果当前节点有右孩子且比左孩子大
+            ++i;     //则考虑将当前节点和右孩子比较
+        if (A[0] < A[i]) { //当前节点k和最大的孩子节点i比较
             A[k] = A[i];
             k = i; // 从i开始继续往下检查，直到所有节点检查完毕
         }
@@ -282,11 +287,11 @@ void AdjustHeap(int A[], int len, int k)
 //堆排序算法的实现
 void BuildMaxHeap(int A[], int len)
 {
-    for (int i = len/2; i > 0; --i)  // 建立初始堆
+    for (int i = len/2; i > 0; --i)  //建立初始堆
         AdjustHeap(A,len,i);
-    for (int i = len; i >= 2; --i) { // n - 1次筛选，向下调整
-        swap(A[1],A[i]); // 堆中最后一个元素替代堆顶位置,A[1] = A[i]
-        AdjustHeap(A,i - 1, 1); // 堆中元素个数逐减，为i - 1
+    for (int i = len; i >= 2; --i) { //n - 1次筛选
+        swap(A[1],A[i]); //堆中最后一个元素替代堆顶位置,A[1] = A[i]
+        AdjustHeap(A,i - 1, 1); //堆中元素个数逐减，为i - 1
     }
 }
 

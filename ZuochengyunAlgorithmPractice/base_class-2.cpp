@@ -3,13 +3,13 @@
 //
 #include <bits/stdc++.h>
 using namespace std;
-
-/******************************************************************************
- * 荷兰国旗问题引入，
+#if 0
+/************************************************************************************
+ * 荷兰国旗问题引入，(分治法)
  * 经典快排，
  * 荷兰国旗改进快排，
  * 随机快排
- ******************************************************************************/
+ ************************************************************************************/
 /**
   * @brief 荷兰国旗问题引入
   *        给定一个数组arr，和一个数num，请把小于等于num的数放在数组的左边，大于num的数放在数组的右边。
@@ -209,6 +209,63 @@ void QuikSort(vector<int> arr, int low, int high)
         QuikSort(arr, pivot + 1, high); // 分治法递归右半部分
     }
 }
+
+#elif 1
+/************************************************************************************
+ * 堆排序
+ ************************************************************************************/
+/**
+ * brief  假设数组中一个值变小了，重新调整为大根堆的过程:
+ *        比较左右孩子和当前的数，找出最大值赋给largest；如果当前数是largest则跳出，
+ *        如果不是，则交换两个数，更新index，和左孩子位置，继续比较。
+ * @param[in] index 需要调整的元素的下标
+ * @param[in] heapsize [0, heapsize-1]区间为堆的区间，堆的长度一定小于等于arr.size()
+ * @return void
+ */
+void Heapify(vector<int> arr,int index,int heapsize)
+{
+    int left = index * 2 + 1;
+    while (left < heapsize) { // 左孩子没有越界
+        int largest = left + 1 < heapsize && arr[left]<arr[left + 1] ? // 有右孩子（右孩子没有越界）&&
+                      left + 1:left;
+        largest = arr[largest] > arr[index] ? largest : index;
+        if (largest == index) { // 虽然变了，但依然满足最大堆，直接退出
+            break;
+        }
+        swap(arr[largest],arr[index]);
+        index = largest;
+        left =  index * 2 + 1;
+    }
+}
+
+// 建初始堆：新结点加入进来并向上调整为大根堆的过程
+void HeapInsert(vector<int> arr,int index)
+{
+    while(arr[index] > arr[(index-1)/2]) {
+        swap(arr[index],arr[(index-1)/2]);
+        index = (index-1)/2;
+    }
+}
+
+/*
+ * 堆排序流程：
+ *   （1）建立初始堆；
+ *   （2）将堆顶元素与堆中最后一个元素交换，剔除最后一个元素，调整新堆
+ */
+void HeapSort(vector<int> arr)
+{
+    if (arr.empty() || arr.size() < 2) {
+        return;
+    }
+    for (int i = 0; i < arr.size(); ++i) {
+        HeapInsert(arr, i);
+    }
+    int size = arr.size();
+
+}
+
+#endif
+
 
 /******************************************************************************
  * 堆排序 树中所有非终端结点的值均不大千（或不小千） 其左、右孩子结点的值
