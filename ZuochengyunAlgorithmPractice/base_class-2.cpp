@@ -209,3 +209,25 @@ void QuikSort(vector<int> arr, int low, int high)
         QuikSort(arr, pivot + 1, high); // 分治法递归右半部分
     }
 }
+
+/******************************************************************************
+ * 堆排序 树中所有非终端结点的值均不大千（或不小千） 其左、右孩子结点的值
+ ******************************************************************************/
+ /**
+  * 方法一：初始堆、调整堆
+  */
+  void AdjustHeap(vector<int> arr, int k)
+ {
+      int arr[0]
+ }
+
+ void BuildMaxHeap(vector<int> arr)
+ {
+     int len = arr.size();
+     for (int i = len / 2; i > 0; ++i) { // 建初始堆
+         AdjustHeap(arr, i);
+     }
+     for (int i = len; i > 1; --i) { // 沿着key较大的孩子节点向下调整
+        AdjustHeap(arr, i);
+     }
+ }
