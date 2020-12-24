@@ -250,7 +250,7 @@ void HeapInsert(vector<int> arr,int index)
 /*
  * 堆排序流程：
  *   （1）建立初始堆；
- *   （2）将堆顶元素与堆中最后一个元素交换，剔除最后一个元素，调整新堆
+ *   （2）将堆顶元素与堆中最后一个元素交换，剔除最后一个元素(HeapSize减少1)，调整新堆
  */
 void HeapSort(vector<int> arr)
 {
@@ -260,31 +260,11 @@ void HeapSort(vector<int> arr)
     for (int i = 0; i < arr.size(); ++i) {
         HeapInsert(arr, i);
     }
-    int size = arr.size();
-
+    int len = arr.size();
+    swap(arr[0], arr[--len]);
+    while (len > 0) {
+        Heapify(arr, 0, len);
+        swap(arr[0], arr[--len]);
+    }
 }
-
 #endif
-
-
-/******************************************************************************
- * 堆排序 树中所有非终端结点的值均不大千（或不小千） 其左、右孩子结点的值
- ******************************************************************************/
- /**
-  * 方法一：初始堆、调整堆
-  */
-  void AdjustHeap(vector<int> arr, int k)
- {
-      int arr[0]
- }
-
- void BuildMaxHeap(vector<int> arr)
- {
-     int len = arr.size();
-     for (int i = len / 2; i > 0; ++i) { // 建初始堆
-         AdjustHeap(arr, i);
-     }
-     for (int i = len; i > 1; --i) { // 沿着key较大的孩子节点向下调整
-        AdjustHeap(arr, i);
-     }
- }
